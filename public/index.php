@@ -6,7 +6,7 @@
   </head>
   <body>
     <? if ($_POST['who'] != '') {?>
-      <h1>Hello <? echo htmlspecialchars($_POST['who']); ?></h1>
+    <h1>Hello <? echo htmlspecialchars($_POST['who']); ?> running on <?echo php_uname('m') ?></h1>
       <a href="index.php">Greet someone else</a>
     <? } else { ?>
       <form class="greetingForm" action="index.php" method="post">
